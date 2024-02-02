@@ -1,0 +1,26 @@
+package com.connection.AddressService.service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.connection.AddressService.entity.Address;
+import com.connection.AddressService.external.AddressFeign;
+import com.connection.AddressService.repo.AddressRepo;
+
+@Service
+public class AddressServiceImpl implements AddressService {
+	
+	@Autowired
+	private AddressRepo repo;
+	
+
+	}
+
+	
+
+
+S
+
+}

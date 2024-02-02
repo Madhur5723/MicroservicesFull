@@ -1,0 +1,5 @@
+package com.connection.AddressService.service;
+
+public interface AddressService {
+
+}

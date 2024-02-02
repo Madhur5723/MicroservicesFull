@@ -1,0 +1,5 @@
+package com.connection.Employee.entity;
+
+public class Employee {
+
+}

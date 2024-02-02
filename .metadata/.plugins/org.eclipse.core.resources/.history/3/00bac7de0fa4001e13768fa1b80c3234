@@ -1,0 +1,7 @@
+package com.connection.Employee.service;
+
+public interface EmployeeService {
+	
+	@Aur
+
+}

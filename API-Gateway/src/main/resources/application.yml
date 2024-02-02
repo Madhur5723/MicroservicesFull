@@ -1,0 +1,25 @@
+spring:
+  application:
+    name: API-Gateway
+  cloud:
+    gateway:
+      mvc:
+        routes:
+        - id: employee-service
+          uri: lb://employee-service
+          predicates:
+            - Path=/employee-app/api/emp/**
+        - id: address-service
+          uri: lb://address-service
+          predicates:
+            - Path=/address-app/api/add/**
+        - id: health-service
+          uri: lb://health-service
+          predicates:
+            - Path=/health-app/api/hea/**
+ 
+server:
+  port: 9093
+eureka:
+  instance:
+    hostname: localhost

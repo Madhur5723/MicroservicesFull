@@ -1,0 +1,20 @@
+package com.example.HealthService.entity;
+
+import jakarta.persistence.Entity;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Entity
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+public class Health {
+	
+	private int id;
+	private String bloodGroup;
+	private String gender;
+	private int height;
+	
+
+}

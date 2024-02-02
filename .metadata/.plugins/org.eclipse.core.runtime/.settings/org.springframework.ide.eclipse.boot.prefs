@@ -1,0 +1,6 @@
+eclipse.preferences.version=1
+org.springframework.ide.eclipse.boot.wizard.PopularityTracker.actuator=2
+org.springframework.ide.eclipse.boot.wizard.PopularityTracker.cloud-eureka=3
+org.springframework.ide.eclipse.boot.wizard.PopularityTracker.cloud-feign=2
+org.springframework.ide.eclipse.boot.wizard.PopularityTracker.cloud-loadbalancer=1
+org.springframework.ide.eclipse.boot.wizard.initializr.url=https\://start.spring.io\n

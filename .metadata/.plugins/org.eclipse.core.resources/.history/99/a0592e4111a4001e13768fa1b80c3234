@@ -1,0 +1,13 @@
+package com.connection.Employee.service;
+
+import com.connection.Employee.entity.Employee;
+
+public interface EmployeeService {
+
+	Employee saveEmployee(Employee employee);
+
+	List<Employee> findAllEmployee();
+
+	
+	
+}

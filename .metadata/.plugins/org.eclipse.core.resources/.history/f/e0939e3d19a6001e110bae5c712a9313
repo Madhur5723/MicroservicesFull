@@ -1,0 +1,43 @@
+package com.connection.AddressService.service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.connection.AddressService.entity.Address;
+import com.connection.AddressService.entity.Employee;
+import com.connection.AddressService.external.AddressFeign;
+import com.connection.AddressService.repo.AddressRepo;
+
+@Service
+public class AddressServiceImpl implements AddressService {
+	
+	@Autowired
+	private AddressRepo repo;
+	
+	@Autowired
+	private AddressFeign feign;
+
+	@Override
+	public Address saveAddress(Address address) {
+		return repo.save(address);
+	}
+
+	@Override
+	public List<Address> getAllAddress() {
+		List<Address> findAll = repo.findAll();
+		findAll.parallelStream().forEach(anonymous ->{
+			List<Employee> allEmployee = feign.getAllEmployee();
+			anonymous.setEmployee(allEmployee);
+		});
+		
+		return findAll;
+	}
+
+	
+
+
+
+
+}

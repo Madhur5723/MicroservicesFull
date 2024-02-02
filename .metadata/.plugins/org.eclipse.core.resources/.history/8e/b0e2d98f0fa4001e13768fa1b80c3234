@@ -1,0 +1,9 @@
+package com.connection.Employee.service;
+
+import com.connection.Employee.entity.Employee;
+
+public interface EmployeeService {
+
+	Object saveEmployee(Employee employee);
+
+}

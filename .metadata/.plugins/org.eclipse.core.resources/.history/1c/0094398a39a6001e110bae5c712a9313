@@ -1,0 +1,14 @@
+package com.connection.AddressService.service;
+
+import java.util.List;
+
+import org.springframework.stereotype.Service;
+
+import com.connection.AddressService.entity.Address;
+
+@Service
+public class AddressService {
+
+	
+
+}

@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: API-Gateway
+  cloud:
+    gateway:
+      mvc:
+        routes:
+        - id: 
+          uri: lb://user-service
+          predicates:
+            - Path=/hello/**
+        - id: address-service
+          uri: lb://address-service
+          predicates:
+            - Path=/hi/**
+ 
+server:
+  port: 9093
+eureka:
+  instance:
+    hostname: localho

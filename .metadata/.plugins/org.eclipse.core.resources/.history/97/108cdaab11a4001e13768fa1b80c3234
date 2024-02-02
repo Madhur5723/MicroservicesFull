@@ -1,0 +1,23 @@
+package com.connection.Employee.service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.connection.Employee.entity.Employee;
+import com.connection.Employee.repo.EmployeeRepositary;
+
+@Service
+public class EmployeeServiceImpl implements EmployeeService {
+	
+	@Autowired
+	private EmployeeRepositary repo;
+
+	@Override
+	public Employee saveEmployee(Employee employee) {
+		return repo.save(employee);
+	}
+
+	
+}

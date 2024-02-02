@@ -1,0 +1,22 @@
+package com.connection.AddressService.external;
+
+import java.util.List;
+
+import org.springframework.cloud.openfeign.FeignClient;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+
+import com.connection.AddressService.entity.Employee;
+
+
+@FeignClient(value="Employee", url="http://localhost:8080/employee/")
+public interface AddressFeign {
+	
+	@GetMapping("/findall")
+	public List<Employee> getAllEmployee();
+	
+	@GetMapping("/find/{id}")
+	public Employee findById(@PathVariable("id") int empId );
+	
+
+}

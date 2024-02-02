@@ -1,0 +1,6 @@
+package com.connection.Employee.entity;
+
+@Entit
+public class Employee {
+
+}

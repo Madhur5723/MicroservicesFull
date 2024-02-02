@@ -1,0 +1,6 @@
+package com.connection.AddressService.Feign;
+
+
+public class HealthFeign {
+
+}

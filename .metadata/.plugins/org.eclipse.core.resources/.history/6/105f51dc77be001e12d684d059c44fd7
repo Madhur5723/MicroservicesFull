@@ -1,0 +1,13 @@
+package com.example.HealthService.repo;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+import com.example.HealthService.entity.Health;
+
+@Repository
+public interface HealthRepositary extends JpaRepository<Health, Integer> {
+
+	Health findHealthByAddressId(int addressId);
+
+}

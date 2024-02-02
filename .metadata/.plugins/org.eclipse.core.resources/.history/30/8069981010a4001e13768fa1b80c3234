@@ -1,0 +1,8 @@
+package com.connection.Employee.service;
+
+import org.springframework.stereotype.Service;
+
+@Service
+public class EmployeeServiceImpl extends Employe {
+
+}

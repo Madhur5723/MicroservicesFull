@@ -1,0 +1,12 @@
+package com.connection.Employee.service;
+
+import java.util.List;
+
+import com.connection.Employee.entity.Employee;
+
+public interface EmployeeService {
+
+
+	
+	
+}

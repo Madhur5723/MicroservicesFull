@@ -1,0 +1,5 @@
+package com.example.HealthService.entity;
+
+public class Health {
+
+}

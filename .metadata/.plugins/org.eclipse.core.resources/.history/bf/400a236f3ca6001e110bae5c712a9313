@@ -1,0 +1,19 @@
+package com.connection.AddressService.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.connection.AddressService.response.AddressResponse;
+
+@Service
+public class AddressService {
+	
+	
+
+	public AddressResponse findAddressByEmployeeId(int id) {
+		return null;
+	}
+
+	
+
+}

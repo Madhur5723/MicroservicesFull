@@ -1,0 +1,5 @@
+package com.connection.AddressService.controller;
+
+public class AddressController {
+
+}

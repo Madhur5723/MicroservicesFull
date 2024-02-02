@@ -1,0 +1,5 @@
+package com.connection.AddressService.entity;
+
+public class Address {
+
+}

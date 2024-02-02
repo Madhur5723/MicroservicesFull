@@ -1,0 +1,15 @@
+server:
+  port: 9090
+  
+spring:  application:    name: API-GATEWAY
+  cloud:    gateway:      mvc:        routes:        - id: employee-Service
+          uri:            lb://employee-Service
+          predicates:          - Path=/one/**
+              - id: ADDRESS-SERVICE
+          uri:
+            lb://ADDRESS-SERVICE
+          predicates:
+          - Path=/two/**
+       
+ 
+      

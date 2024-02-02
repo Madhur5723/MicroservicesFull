@@ -1,0 +1,5 @@
+package com.connection.AddressService.response;
+
+public class HealthResponse {
+
+}

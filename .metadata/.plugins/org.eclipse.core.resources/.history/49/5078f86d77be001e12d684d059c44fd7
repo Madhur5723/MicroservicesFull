@@ -1,0 +1,27 @@
+package com.example.HealthService.service;
+
+import org.modelmapper.ModelMapper;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.example.HealthService.repo.HealthRepositary;
+import com.example.HealthService.response.HealthResponse;
+
+@Service
+public class HealthService {
+
+	
+	@Autowired
+	private HealthRepositary repo;
+	
+	@Autowired
+	private ModelMapper modelMapper;
+	
+	
+	public HealthResponse findHealthByAddressId(int addressId) {
+		repo.findHealthByAddressId(addressId);
+	}
+	
+	
+
+}
